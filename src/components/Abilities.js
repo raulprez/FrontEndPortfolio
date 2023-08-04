@@ -1,7 +1,7 @@
 import React from "react";
-import { SiAdobeillustrator, SiAdobephotoshop } from "react-icons/si";
+import { SiAdobeillustrator, SiAdobephotoshop, SiAdobelightroom } from "react-icons/si";
 import { DiDjango, DiSass, DiPhotoshop, DiIllustrator, DiJavascript1 } from "react-icons/di";
-import { BiLogoReact, BiLogoTailwindCss, BiLogoCss3, BiLogoJavascript, BiLogoPython} from "react-icons/bi";
+import { BiLogoReact, BiLogoTailwindCss, BiLogoCss3, BiLogoJavascript, BiLogoPython, BiLogoWordpress,BiLogoShopify} from "react-icons/bi";
 import { AiFillHtml5, AiOutlineHtml5  } from "react-icons/ai";
 import { LiaBootstrap,  } from "react-icons/lia";
 import { TbBrandCss3,  } from "react-icons/tb";
@@ -22,18 +22,32 @@ function Abilities() {
              
 
               <div className="flex justify-center gap-4">
-                <p className="text-xl flex flex-col justify-center items-center gap-4 py-3 text-gray-600 dark:text-gray-400"><DiIllustrator size='3rem' />Illustrator</p>
-                <p className="text-xl flex flex-col justify-center items-center gap-4 py-3 text-gray-600 dark:text-gray-400"><DiPhotoshop size='3rem' />Photoshop</p>
+                <p className="text-xl flex flex-col justify-center items-center gap-4 py-3 text-gray-600 dark:text-gray-400"><SiAdobeillustrator size='3rem' />Illustrator</p>
+                <p className="text-xl flex flex-col justify-center items-center gap-4 py-3 text-gray-600 dark:text-gray-400"><SiAdobephotoshop size='3rem' />Photoshop</p>
+                <p className="text-xl flex flex-col justify-center items-center gap-4 py-3 text-gray-600 dark:text-gray-400"><SiAdobelightroom size='3rem' />Lightroom</p>
               </div>
 
 
             </div>
             <div className="text-center shadow-lg p-10 rounded-xl my-10  dark:bg-gray-800 dark:shadow-none flex-1">
+             
+              <h3 className="text-lg font-medium pt-8 pb-2 text-teal-500 ">CMS and E-commerce</h3>
+              <p className="py-2 dark:text-white">
+              Creating elegant designs suited for your needs following core
+                design theory.
+              </p>
+              
+              <div className="flex justify-center gap-4">
+              <p className="text-xl flex flex-col justify-center items-center gap-4 py-3 text-gray-600 dark:text-gray-400"><BiLogoWordpress size='3rem'/>Wordpress</p>
+              <p className="text-xl flex flex-col justify-center items-center gap-4 py-3 text-gray-600 dark:text-gray-400"><BiLogoShopify size='3rem'/>Shopify</p>
+              </div>
+            </div>
+            <div className="text-center shadow-lg p-10 rounded-xl my-10  dark:bg-gray-800 dark:shadow-none flex-1">
             
             <h3 className="text-lg font-medium pt-8 pb-2 text-teal-500 ">Development Tools</h3>
               <p className="py-2 dark:text-white">
-                Do you have an idea for your next great website? Let's make it a
-                reality.
+              Creating elegant designs suited for your needs following core
+                design theory.
               </p>
 
               <div className="flex justify-center gap-4">
@@ -45,12 +59,14 @@ function Abilities() {
               </div>
 
             </div>
+
+            
             <div className="text-center shadow-lg p-10 rounded-xl my-10  dark:bg-gray-800 dark:shadow-none flex-1">
              
               <h3 className="text-lg font-medium pt-8 pb-2 text-teal-500 ">Languages</h3>
               <p className="py-2 dark:text-white">
-                Are you interested in feedback for your current project? I can
-                give you tips and tricks to level it up.
+              Creating elegant designs suited for your needs following core
+                design theory.
               </p>
               
               <div className="flex justify-center gap-4">
