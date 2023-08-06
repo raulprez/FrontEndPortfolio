@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react';
 import { DarkModeSwitch } from 'react-toggle-dark-mode';
 
 
-
 function NavBar() {
   const [darkToggle, setDarkToggle] = useState(false);
   const [checkBoxText, setCheckBoxText] = useState('Light Mode');
@@ -19,15 +18,15 @@ function NavBar() {
 
   return (
     <nav className={`h-10 w-full bg-white dark:bg-gray-800 p-5 ${darkToggle ? 'dark' : ''}`}>
-      <ul className='flex items-center justify-between lg:px-8'>
-        <li>
+      <ul className='flex items-center justify-between px-8'>
+        {/* <li>
         <img
             src={darkToggle ? "/LbWhite.png" : "/LbBlack.png"} 
             alt="Logo"
             className="h-12" 
           />
-        </li>
-        <li className='flex flex-col align-middle'>
+        </li> */}
+        <li className='flex flex-col items-center'>
             <DarkModeSwitch checked={darkToggle} onChange={setDarkToggle} size={30}/>
               <label className="text-black dark:text-white" onClick={() => setDarkToggle(!darkToggle)}>
                 {checkBoxText} 
