@@ -2,6 +2,9 @@ import React from "react";
 import { AiOutlineInstagram, AiFillGithub, AiFillFacebook } from "react-icons/ai";
 
 
+
+
+
 function Title() {
   return (
     <div className="text-center p-10 pt-20 dark:bg-gray-800">
@@ -16,13 +19,19 @@ function Title() {
       Feel free to get in touch with me through the social media links below. Let's work together and create something amazing!
       </p>
       <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600 dark:text-gray-400">
-        <AiFillGithub />
-        <AiFillFacebook />
-        <AiOutlineInstagram />
+        <div><a href="https://github.com/raulprez"><AiFillGithub /></a></div>
+        <div><a href="https://www.facebook.com/raul.perezcampos.3"><AiFillFacebook /></a></div>
+        <div><a href="https://www.instagram.com/raul_prz96/"><AiOutlineInstagram /></a></div>
       </div>
-      <div className="mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 relative overflow-hidden mt-20 md:h-96 md:w-96">
 
+      {/* <div className="mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 relative overflow-hidden mt-20 md:h-96 md:w-96">
+      </div> */}
+
+      <div className="flex justify-center items-center mt-20">
+      <img src="./FrontEndPortfolio/ProfilePicture2.png" className="h-auto w-4/6 sm:w-1/4 rounded-full" alt="Raul Perez - Front End Developer" />
+      {/* src change after deployment to githubpages link with solution https://stackoverflow.com/questions/51002481/images-not-loading-when-deploying-to-github-pages/70322924#70322924 */}
       </div>
+
     </div>
   );
 }

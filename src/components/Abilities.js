@@ -16,8 +16,7 @@ function Abilities() {
             <div className="text-center shadow-lg p-10 rounded-xl  dark:bg-gray-800 dark:shadow-none flex-1">
               <h3 className="text-lg font-medium pt-8 pb-2 text-teal-500 ">Languages</h3>
               <p className="py-2 dark:text-white">
-              Creating elegant designs suited for your needs following core
-                design theory.
+              Programming languages that I use.
               </p>
               <div className="flex justify-center gap-6">
               <p className="flex flex-col justify-center items-center gap-4 py-3 text-gray-600 dark:text-gray-400"><AiOutlineHtml5 size='3rem' className="text-[#e34c26]"/>HTML</p>
@@ -30,8 +29,7 @@ function Abilities() {
             <div className="text-center shadow-lg p-10 rounded-xl  dark:bg-gray-800 dark:shadow-none flex-1">
             <h3 className="text-lg font-medium pt-8 pb-2 text-teal-500 ">Development Tools</h3>
               <p className="py-2 dark:text-white">
-              Creating elegant designs suited for your needs following core
-                design theory.
+              Frameworks and libraries I've worked with.
               </p>
               <div className="flex justify-center gap-6">
               <p className="flex flex-col justify-center items-center gap-4 py-3 text-gray-600 dark:text-gray-400"><DiDjango size='3rem' className="text-[#092E20] dark:text-[#ffffff]" />Django</p>
@@ -45,8 +43,7 @@ function Abilities() {
             <div className="text-center shadow-lg p-10 rounded-xl  dark:bg-gray-800 dark:shadow-none flex-1">
               <h3 className="text-lg font-medium pt-8 pb-2 text-teal-500 ">CMS and E-commerce</h3>
               <p className="py-2 dark:text-white">
-              Creating elegant designs suited for your needs following core
-                design theory.
+              Content Management Systems and E-commerce platforms i've worked with.
               </p>
               <div className="flex justify-center gap-6">
               <p className="flex flex-col justify-center items-center gap-4 py-3 text-gray-600 dark:text-gray-400"><BiLogoWordpress size='3rem' className="text-[#00749C]"/>Wordpress</p>
@@ -57,8 +54,7 @@ function Abilities() {
             <div className="text-center shadow-lg p-10 rounded-xl  dark:bg-gray-800 dark:shadow-none flex-1">
             <h3 className="text-lg font-medium pt-8 pb-2 text-teal-500 ">Design</h3>
               <p className="py-2 dark:text-white">
-                Creating elegant designs suited for your needs following core
-                design theory.
+                Design tools that I use day to day.
               </p>
               <div className="flex justify-center gap-6">
                 <p className="flex flex-col justify-center items-center gap-4 py-3 text-gray-600 dark:text-gray-400"><SiAdobeillustrator size='3rem' className="text-[#DC6920]" />Illustrator</p>
