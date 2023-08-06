@@ -28,7 +28,7 @@ function Title() {
       </div> */}
 
       <div className="flex justify-center items-center mt-20">
-      <img src="./FrontEndPortfolio/ProfilePicture2.png" className="h-auto w-4/6 sm:w-1/4 rounded-full" alt="Raul Perez - Front End Developer" />
+      <img src={process.env.PUBLIC_URL + "/ProfilePicture2.png"} className="h-auto w-4/6 sm:w-1/4 rounded-full" alt="Raul Perez" />
       {/* src change after deployment to githubpages link with solution https://stackoverflow.com/questions/51002481/images-not-loading-when-deploying-to-github-pages/70322924#70322924 */}
       </div>
 
