@@ -16,6 +16,8 @@ function NavBar() {
     }
   }, [darkToggle]);
 
+  const sunColor = darkToggle ? 'white' : 'black'; // Change the color as needed
+
   return (
     <nav className={`h-10 w-full bg-white dark:bg-gray-800 p-5 ${darkToggle ? 'dark' : ''}`}>
       <ul className='flex items-center justify-between px-8'>
@@ -27,7 +29,7 @@ function NavBar() {
           />
         </li> */}
         <li className='flex flex-col items-center'>
-            <DarkModeSwitch checked={darkToggle} onChange={setDarkToggle} size={30}/>
+            <DarkModeSwitch checked={darkToggle} onChange={setDarkToggle} size={30} sunColor={sunColor}/>
               <label className="text-black dark:text-white" onClick={() => setDarkToggle(!darkToggle)}>
                 {checkBoxText} 
               </label>
