@@ -1,70 +1,84 @@
-import React from "react";
+import React, { useState } from "react";
 import { SiAdobeillustrator, SiAdobephotoshop, SiAdobelightroom } from "react-icons/si";
 import { DiDjango, DiSass, DiPhotoshop, DiIllustrator, DiJavascript1 } from "react-icons/di";
-import { BiLogoReact, BiLogoTailwindCss, BiLogoCss3, BiLogoJavascript, BiLogoPython, BiLogoWordpress,BiLogoShopify} from "react-icons/bi";
+import { BiLogoReact, BiLogoTailwindCss, BiLogoCss3, BiLogoJavascript, BiLogoPython, BiLogoWordpress,BiLogoShopify, BiCheck, BiLogoJquery} from "react-icons/bi";
 import { AiFillHtml5, AiOutlineHtml5  } from "react-icons/ai";
 import { LiaBootstrap,  } from "react-icons/lia";
 import { TbBrandCss3,  } from "react-icons/tb";
 
-
-
-
 function Abilities() {  
-  return (
-    <div className="lg:flex gap-10 dark:bg-gray-800">
 
-            <div className="text-center shadow-lg p-10 rounded-xl  dark:bg-gray-800 dark:shadow-none flex-1">
-              <h3 className="text-lg font-medium pt-8 pb-2 text-teal-500 ">Languages</h3>
-              <p className="py-2 dark:text-white">
-              Programming languages that I use.
-              </p>
-              <div className="flex justify-center gap-6">
-              <p className="flex flex-col justify-center items-center gap-4 py-3 text-gray-600 dark:text-gray-400"><AiOutlineHtml5 size='3rem' className="text-[#e34c26]"/>HTML</p>
-              <p className="flex flex-col justify-center items-center gap-4 py-3 text-gray-600 dark:text-gray-400"><TbBrandCss3 size='3rem' className="text-[#264de4]"/>CSS</p>
-              <p className="flex flex-col justify-center items-center gap-4 py-3 text-gray-600 dark:text-gray-400"><DiJavascript1 size='3rem' className="text-[#F0DB4F]"/>Javascript</p>
-              <p className="flex flex-col justify-center items-center gap-4 py-3 text-gray-600 dark:text-gray-400"><BiLogoPython size='3rem' className="text-[#306998]"/>Python</p>
-              </div>
-            </div>
+  const [selectedCategory, setSelectedCategory] = useState("All");
 
-            <div className="text-center shadow-lg p-10 rounded-xl  dark:bg-gray-800 dark:shadow-none flex-1">
-            <h3 className="text-lg font-medium pt-8 pb-2 text-teal-500 ">Development Tools</h3>
-              <p className="py-2 dark:text-white">
-              Frameworks and libraries I've worked with.
-              </p>
-              <div className="flex justify-center gap-6">
-              <p className="flex flex-col justify-center items-center gap-4 py-3 text-gray-600 dark:text-gray-400"><DiDjango size='3rem' className="text-[#092E20] dark:text-[#ffffff]" />Django</p>
-              <p className="flex flex-col justify-center items-center gap-4 py-3 text-gray-600 dark:text-gray-400"><BiLogoReact size='3rem' className="text-[#61dafb]" />React</p>
-              <p className="flex flex-col justify-center items-center gap-4 py-3 text-gray-600 dark:text-gray-400"><BiLogoTailwindCss size='3rem' className="text-[#4BBBEB]" />Tailwind</p>
-              <p className="flex flex-col justify-center items-center gap-4 py-3 text-gray-600 dark:text-gray-400"><DiSass size='3rem' className="text-[#CD679A]" />SASS</p>
-              <p className="flex flex-col justify-center items-center gap-4 py-3 text-gray-600 dark:text-gray-400"><LiaBootstrap size='3rem' className="text-[#563d7c]" />Bootstrap</p>
-              </div>
-            </div>
+  const abilities = [
+    {title: 'HTML', skillset: 'Development', icon: <AiOutlineHtml5 size='4.5rem' className="text-[#e34c26]"/>},
+    {title: 'CSS', skillset: 'Development', icon: <TbBrandCss3 size='4.5rem' className="text-[#264de4]"/>},
+    {title: 'Javascript', skillset: 'Development', icon: <DiJavascript1 size='4.5rem' className="text-[#F0DB4F]"/>},
+    {title: 'Python', skillset: 'Development', icon: <BiLogoPython size='4.5rem' className="text-[#306998]"/>},
+    {title: 'Django', skillset: 'Development', icon: <DiDjango size='4.5rem' className="text-[#092E20] dark:text-[#ffffff]"/>},
+    {title: 'React', skillset: 'Development', icon: <BiLogoReact size='4.5rem' className="text-[#61dafb]"/>},
+    {title: 'Tailwind', skillset: 'Development', icon: <BiLogoTailwindCss size='4.5rem' className="text-[#4BBBEB]"/>},
+    {title: 'SASS', skillset: 'Development', icon: <DiSass size='4.5rem' className="text-[#CD679A]"/>},
+    {title: 'Bootstrap', skillset: 'Development', icon: <LiaBootstrap size='4.5rem' className="text-[#563d7c]"/>},
+    {title: 'Wordpress', skillset: 'CMS', icon: <BiLogoWordpress size='4.5rem' className="text-[#00749C]"/>},
+    {title: 'Shopify', skillset: 'E-commerce', icon: <BiLogoShopify size='4.5rem' className="text-[#95BF47]"/>},
+    {title: 'Illustrator', skillset: 'Design', icon: <DiIllustrator size='4.5rem' className="text-[#DC6920]"/>},
+    {title: 'Photoshop', skillset: 'Design', icon: <DiPhotoshop size='4.5rem' className="text-[#31A8FF]"/>},
+    {title: 'Lightroom', skillset: 'Design', icon: <SiAdobelightroom size='4.5rem' className="text-[#B4D6E0]"/>},
+  ];
 
-            <div className="text-center shadow-lg p-10 rounded-xl  dark:bg-gray-800 dark:shadow-none flex-1">
-              <h3 className="text-lg font-medium pt-8 pb-2 text-teal-500 ">CMS and E-commerce</h3>
-              <p className="py-2 dark:text-white">
-              Content Management Systems and E-commerce platforms i've worked with.
-              </p>
-              <div className="flex justify-center gap-6">
-              <p className="flex flex-col justify-center items-center gap-4 py-3 text-gray-600 dark:text-gray-400"><BiLogoWordpress size='3rem' className="text-[#00749C]"/>Wordpress</p>
-              <p className="flex flex-col justify-center items-center gap-4 py-3 text-gray-600 dark:text-gray-400"><BiLogoShopify size='3rem' className="text-[#95BF47]"/>Shopify</p>
-              </div>
-            </div>
+  const buttons = [
+    { name: "All", value: "All" },
+    { name: "Development", value: "Development" },
+    { name: "CMS", value: "CMS" },
+    { name: "E-commerce", value: "E-commerce" },
+    { name: "Design", value: "Design" }
+  ];
 
-            <div className="text-center shadow-lg p-10 rounded-xl  dark:bg-gray-800 dark:shadow-none flex-1">
-            <h3 className="text-lg font-medium pt-8 pb-2 text-teal-500 ">Design</h3>
-              <p className="py-2 dark:text-white">
-                Design tools that I use day to day.
-              </p>
-              <div className="flex justify-center gap-6">
-                <p className="flex flex-col justify-center items-center gap-4 py-3 text-gray-600 dark:text-gray-400"><SiAdobeillustrator size='3rem' className="text-[#DC6920]" />Illustrator</p>
-                <p className="flex flex-col justify-center items-center gap-4 py-3 text-gray-600 dark:text-gray-400"><SiAdobephotoshop size='3rem' className="text-[#31A8FF]" />Photoshop</p>
-                <p className="flex flex-col justify-center items-center gap-4 py-3 text-gray-600 dark:text-gray-400"><SiAdobelightroom size='3rem' className="text-[#B4D6E0]" />Lightroom</p>
-              </div>
-            </div>
-            
+  const filteredAbilities =
+    selectedCategory === "All"
+      ? abilities
+      : abilities.filter((ability) => ability.skillset === selectedCategory);
+
+      return (
+        <div className="text-center dark:bg-gray-800 h-screen p-5">
+          <div className="flex flex-wrap">
+            {buttons.map(({ name, value }) => (
+              <button
+              key={name}
+              value={value}
+              onClick={() => setSelectedCategory(value)}
+              className={`${
+                selectedCategory === value
+                  ? "ring-black dark:bg-white ring-1 font-bold"
+                  : "ring-gray-300 ring-opacity-50 ring-1 text-gray-700 dark:text-white"
+              } px-3 py-2 rounded-full m-1 relative flex items-center`}
+            >
+              <span
+                className={`${
+                  selectedCategory === value
+                    ? "bg-black"
+                    : "ring-gray-300 ring-opacity-50 ring-1"
+                } w-4 h-4 rounded-full flex items-center justify-center mr-2`}
+              >
+                {selectedCategory === value && <BiCheck size="1rem" className="text-white" />}
+              </span>
+              {name}
+            </button>
+            ))}
           </div>
-  );
-}
-
-export default Abilities;
+    
+          <div className="flex gap-5 flex-wrap justify-center">
+            {filteredAbilities.map((ability) => (
+              <div key={ability.title}>
+                <p className="text-gray-800 dark:text-gray-200 p-5">
+                  {ability.icon} {ability.title}
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
+      );
+    }
+    
+    export default Abilities;
