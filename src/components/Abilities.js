@@ -42,6 +42,9 @@ function Abilities() {
 
       return (
         <div className="text-center dark:bg-gray-800 h-screen p-5">
+          <h3 className="text-2xl py-2 dark:text-white md:text-3xl">
+          Abilities
+          </h3>
           <div className="flex flex-wrap">
             {buttons.map(({ name, value }) => (
               <button
